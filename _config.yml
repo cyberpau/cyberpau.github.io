@@ -1,7 +1,7 @@
 # --- Basic options --- #
 
 # Name of website
-title: Cyberpau - Online Portfolio
+title: Cyberpau's Online Portfolio
 
 # Short description of your site
 description: A virtual proof that I'm awesome
@@ -84,8 +84,8 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
+navbar-col: "#121212"
+navbar-text-col: "#EAEAEA"
 navbar-border-col: "#EAEAEA"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
