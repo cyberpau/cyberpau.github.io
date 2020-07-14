@@ -24,6 +24,7 @@ body {
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
+  text-align: justify;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -203,7 +204,7 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
   font-weight: 800;
-  color: {{ site.navbar-text-col | default: "#EAEAEA" }};
+  color: {{ site.navbar-text-col | default: "#404040" }};
 }
 
 .navbar-toggler {
@@ -216,7 +217,7 @@ img {
 }
 
 .navbar-custom .navbar-toggler[aria-expanded="true"] {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
 }
 
 .dropdown-toggle::after {
