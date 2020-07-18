@@ -13,6 +13,7 @@ author: John Paulo Mataac
 
 navbar-links:
   Blogs: "blogs"
+  Projects: "projects"
   # Resources:
   #   - Online XML Viewer: "https://codebeautify.org/xmlviewer#"
   #   - Character Count Tool: "https://charactercounttool.com/"
