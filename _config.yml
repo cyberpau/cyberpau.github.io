@@ -1,10 +1,10 @@
 # --- Basic options --- #
 
 # Name of website
-title: Cyberpau's Online Portfolio
+title: Cyberpau's Curious Mind
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: John Paulo Mataac's Website
 
 # Your name to show in the footer
 author: John Paulo Mataac
@@ -12,10 +12,12 @@ author: John Paulo Mataac
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Resources:
-    - Online XML Viewer: "https://codebeautify.org/xmlviewer#"
-    - Character Count Tool: "https://charactercounttool.com/"
-  About Me: "aboutme"
+  Blogs: "blogs"
+  # Resources:
+  #   - Online XML Viewer: "https://codebeautify.org/xmlviewer#"
+  #   - Character Count Tool: "https://charactercounttool.com/"
+  Services: "services"
+  #About Me: "aboutme"
 
 # --- Logo --- #
 
