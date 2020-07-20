@@ -2,17 +2,17 @@
 
 var BeautifulJekyllJS = {
 
-  bigImgEl : null,
-  numImgs : null,
+  bigImgEl: null,
+  numImgs: null,
 
-  init : function() {
+  init: function () {
     // Shorten the navbar after scrolling a little bit down
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar").addClass("top-nav-short");
-        } else {
-            $(".navbar").removeClass("top-nav-short");
-        }
+    $(window).scroll(function () {
+      if ($(".navbar").offset().top > 50) {
+        $(".navbar").addClass("top-nav-short");
+      } else {
+        $(".navbar").removeClass("top-nav-short");
+      }
     });
 
     // On mobile, hide the avatar when expanding the navbar menu
@@ -27,7 +27,7 @@ var BeautifulJekyllJS = {
     BeautifulJekyllJS.initImgs();
   },
 
-  initImgs : function() {
+  initImgs: function () {
     // If the page was large images to randomly select from, choose an image
     if ($("#header-big-imgs").length > 0) {
       BeautifulJekyllJS.bigImgEl = $("#header-big-imgs");
@@ -41,7 +41,7 @@ var BeautifulJekyllJS = {
       BeautifulJekyllJS.setImg(src, desc);
 
       // For better UX, prefetch the next image so that it will already be loaded when we want to show it
-      var getNextImg = function() {
+      var getNextImg = function () {
         var imgInfo = BeautifulJekyllJS.getImgInfo();
         var src = imgInfo.src;
         var desc = imgInfo.desc;
@@ -50,14 +50,14 @@ var BeautifulJekyllJS = {
         prefetchImg.src = src;
         // if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
 
-        setTimeout(function(){
+        setTimeout(function () {
           var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
           $(".intro-header.big-img").prepend(img);
-          setTimeout(function(){ img.css("opacity", "1"); }, 50);
+          setTimeout(function () { img.css("opacity", "1"); }, 50);
 
           // after the animation of fading in the new image is done, prefetch the next one
           //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-          setTimeout(function() {
+          setTimeout(function () {
             BeautifulJekyllJS.setImg(src, desc);
             img.remove();
             getNextImg();
@@ -73,18 +73,18 @@ var BeautifulJekyllJS = {
     }
   },
 
-  getImgInfo : function() {
+  getImgInfo: function () {
     var randNum = Math.floor((Math.random() * BeautifulJekyllJS.numImgs) + 1);
     var src = BeautifulJekyllJS.bigImgEl.attr("data-img-src-" + randNum);
     var desc = BeautifulJekyllJS.bigImgEl.attr("data-img-desc-" + randNum);
 
     return {
-      src : src,
-      desc : desc
+      src: src,
+      desc: desc
     }
   },
 
-  setImg : function(src, desc) {
+  setImg: function (src, desc) {
     $(".intro-header.big-img").css("background-image", 'url(' + src + ')');
     if (typeof desc !== typeof undefined && desc !== false) {
       $(".img-desc").text(desc).show();
@@ -97,3 +97,25 @@ var BeautifulJekyllJS = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
+
+// get all iframes that were parsed before this tag
+var iframes = document.getElementsByTagName("iframe");
+
+for (let i = 0; i < iframes.length; i++) {
+  var url = iframes[i].getAttribute("src");
+  if (url.startsWith("https://docs.google.com/document/d/")) {
+    // create div and replace iframe
+    let d = document.createElement('div');
+    d.classList.add("embedded-doc"); // optional
+    iframes[i].parentElement.replaceChild(d, iframes[i]);
+
+    // CORS request
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.onload = function () {
+      // display response
+      d.innerHTML = xhr.responseText;
+    };
+    xhr.send();
+  }
+}
