@@ -16,11 +16,7 @@ navbar-links:
   Projects:
     - 'DITO HR Portal / Chatbot': "https://dito-lab.github.io/test/"
     - 'Tri-C.E.R.A. Chatbot': "https://github.com/cyberpau/tricera-bot"
-  Services: "services"
-  Community: "community"
-  Certificates:
-      - BrightTALK Profile: ""
-
+    
   # Resources:
   #   - Online XML Viewer: "https://codebeautify.org/xmlviewer#"
   #   - Character Count Tool: "https://charactercounttool.com/"
