@@ -12,20 +12,15 @@ author: John Paulo Mataac
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Blogs: 
-    - Tags Index: "tags"
-    - Featured Blogs:
-      - Getting Started with AIOPS: ""
-      - Getting Started with PaaS: ""
-  Projects:
-    - 'DITO HR Portal / Chatbot': "https://dito-lab.github.io/test/"
-    - 'Tri-C.E.R.A. Chatbot': "https://github.com/cyberpau/tricera-bot"
-    
-  # Resources:
-  #   - Online XML Viewer: "https://codebeautify.org/xmlviewer#"
-  #   - Character Count Tool: "https://charactercounttool.com/"
-  
-  #About Me: "aboutme"
+  Featured Blogs: 
+    - Getting Started with PaaS: "/_posts/2020-07-20-paas.md"
+    - Getting Started with AIOPS: "/_posts/2020-07-20-aiops.md"
+  Projects: "projects"
+  Services:
+    - Chatbot Development: ""
+    - Create Online Portfolio: ""
+    - Participate on Hackathons: ""
+  Community: ""
 
 # --- Logo --- #
 
