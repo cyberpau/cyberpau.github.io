@@ -12,7 +12,8 @@ author: John Paulo Mataac
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Featured Blogs: 
+  Featured Blogs:
+    - Website Security For Beginners: "2020-07-22-security-for-beginners.md"
     - Getting Started with PaaS: "/_posts/2020-07-20-paas.md"
     - Getting Started with AIOPS: "/_posts/2020-07-20-aiops.md"
   Projects: "projects"
