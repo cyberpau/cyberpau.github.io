@@ -4,15 +4,46 @@ title: John Paulo Mataac
 subtitle: Full Stack Developer, DevSecOps
 cover-img: /assets/img/path.jpg
 ---
-<h2>Have a Conversation with my Chatbot Assistant</h2>
-<p>As a Developer, one of my objectives is to create a secure system. With that in mind, I decided to put all sensitive information (including contact details, personal data, etc.) within my Chatbot to prevent automated web crawlers and spammers.</p>
+<h2>
+ <span class="text_1">Meet Kiwi, my personal assistant</span>
+ <span class="text_2">She is an intelligent chatbot I developed to respond to queries</span>
+ <span class="text_3">She also protects my sensitive information from Spammers and Web Crawlers</span>
+</h2>
 
 <img src="assets/img/header.PNG" alt="... is a Full Stack Developer, with a combined 4+ years experience in IT and Telecommunication Industry. He specializes in Website, Software and Chatbot Development.">
 
-<a id="projects"><h2>Projects</h2></a>
+<a id="projects"><br></a>
+<h2>Projects</h2>
 <p>My 4+ years experience in the IT Industry have given me the opportunity to work in both Enterprise and Startup companies. Here are the projects that are deemed safe to disclose.</p>
 
-<h3>My Levels of Interest:</h3>
-<div class="text-center"><iframe width="100%" height="500" seamless frameborder="0" scrolling="yes"
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vROvPq5Lhl7RVxojGjG_el3fsqyn-VGsvfeRWvvt3p1IA1wO7hhT674W33pcypDf_ySqfN-fUL1i9xg/pubchart?oid=1994426906&amp;format=interactive"></iframe>
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+
+{%- capture site_tags -%}
+    {%- for tag in site.tags -%}
+        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign tags_list = site_tags | split:',' | sort -%}
+
+{%- for tag in tags_list -%}
+    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+{%- endfor -%}
+
+<div id="full-tags-list">
+{%- for tag in tags_list -%}
+    <h2 id="{{- tag -}}" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+    </h2>
+    <div class="post-list">
+        {%- for post in site.tags[tag] -%}
+            <div class="tag-entry">
+                <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+                <div class="entry-date">
+                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+                </div>
+            </div>
+        {%- endfor -%}
+    </div>
+{%- endfor -%}
 </div>
