@@ -5,45 +5,27 @@ subtitle: Full Stack Developer, DevSecOps
 cover-img: /assets/img/path.jpg
 ---
 <h2>
- <span class="text_1">Meet Kiwi, my personal assistant</span>
- <span class="text_2">She is an intelligent chatbot I developed to respond to queries</span>
- <span class="text_3">She also protects my sensitive information from Spammers and Web Crawlers</span>
+        <span class="text_1">Meet Kiwi, my personal assistant</span>
+        <span class="text_2">She is an intelligent chatbot I developed to respond to queries</span>
+        <span class="text_3">She also protects my sensitive information from Spammers and Web Crawlers</span>
 </h2>
 
-<img src="assets/img/header.PNG" alt="... is a Full Stack Developer, with a combined 4+ years experience in IT and Telecommunication Industry. He specializes in Website, Software and Chatbot Development.">
+<!-- Typed.JS -->
+<script>
+        var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings'
+        });
+</script>
+<div id="typed-strings">
+        <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+        <p>It <em>types</em> out sentences.</p>
+</div>
+<span id="typed"></span>
+
+<img src="assets/img/header.PNG"
+        alt="... is a Full Stack Developer, with a combined 4+ years experience in IT and Telecommunication Industry. He specializes in Website, Software and Chatbot Development.">
 
 <a id="projects"><br></a>
 <h2>Projects</h2>
-<p>My 4+ years experience in the IT Industry have given me the opportunity to work in both Enterprise and Startup companies. Here are the projects that are deemed safe to disclose.</p>
-
-{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-
-{%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
-{%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
-
-{%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-{%- endfor -%}
-
-<div id="full-tags-list">
-{%- for tag in tags_list -%}
-    <h2 id="{{- tag -}}" class="linked-section">
-        <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-    </h2>
-    <div class="post-list">
-        {%- for post in site.tags[tag] -%}
-            <div class="tag-entry">
-                <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
-                </div>
-            </div>
-        {%- endfor -%}
-    </div>
-{%- endfor -%}
-</div>
+<p>My 4+ years experience in the IT Industry have given me the opportunity to work in both Enterprise and Startup
+        companies. Here are the projects that are deemed safe to disclose.</p>

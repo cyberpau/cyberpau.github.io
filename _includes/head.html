@@ -4,6 +4,8 @@
   <link rel="icon" href="/assets/img/avatar-icon.png">
 
   <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator | default: '-' }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   
   {% if site.author %}
   <meta name="author" content="{{ site.author }}">
@@ -140,5 +142,6 @@
   <!-- Staticman -->
   <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
   {% endif %}
+
 
 </head>
