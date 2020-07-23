@@ -13,14 +13,10 @@ author: John Paulo Mataac
 
 navbar-links:
   Featured Blogs:
-    - Website Security For Beginners: "2020-07-22-security-for-beginners.md"
-    - Getting Started with PaaS: "/_posts/2020-07-20-paas.md"
-    - Getting Started with AIOPS: "/_posts/2020-07-20-aiops.md"
-  Projects: "projects"
-  Services:
-    - Chatbot Development: ""
-    - Create Online Portfolio: ""
-    - Participate on Hackathons: ""
+    - Website Security For Beginners: "2020-07-22-security-for-beginners"
+    - Getting Started with PaaS: "2020-07-20-paas"
+    - Getting Started with AIOPS: "2020-07-20-aiops"
+  Projects: "https://cyberpau.com/#projects"
   Community: ""
 
 # --- Logo --- #
@@ -104,7 +100,7 @@ footer-link-col: "#404040"
 
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+page-img: "/assets/img/bgimage.svg"
 
 # --- Web Statistics Section --- #
 

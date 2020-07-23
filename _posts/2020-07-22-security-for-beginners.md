@@ -5,8 +5,9 @@ subtitle:
 tags: [blogs, security, website]
 comments: true
 ---
+Have you ever wondered what's next after you have succesfuly created and deployed your website? In this article, you will learn basic security checks to ensure that your website has no vulnerabilities.
 
-After you completed creating your website, the next thing you need to do is to secure it. 
+### Don't have a website yet? Visit this [link](https://cyberpau.com/_) for a quick tutorial.
 
 ## Why?
 
