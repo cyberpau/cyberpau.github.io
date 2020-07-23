@@ -17,7 +17,7 @@ navbar-links:
     - Getting Started with PaaS: "2020-07-20-paas"
     - Getting Started with AIOPS: "2020-07-20-aiops"
   Projects: "https://cyberpau.com/#projects"
-  Community: ""
+  Community: "community"
 
 # --- Logo --- #
 
@@ -100,7 +100,7 @@ footer-link-col: "#404040"
 
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
-page-img: "/assets/img/bgimage.svg"
+#page-img: "/assets/img/bgimage.svg"
 
 # --- Web Statistics Section --- #
 
