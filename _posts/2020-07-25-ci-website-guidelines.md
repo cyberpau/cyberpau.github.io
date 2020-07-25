@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TO-DO List for Post-Webite Creation
+title: Technical Tips on Improving your Website
 subtitle: Continuous Improvement Guidelines for newly created or poorly managed websites
 tags: [blogs, security, website]
 comments: true
