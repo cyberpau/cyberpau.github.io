@@ -949,6 +949,13 @@ df-messenger {
   left: 50%;
 }
 
+.half-width {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+
 .main {
     max-width: 1200px;
     margin: auto;
@@ -1023,14 +1030,14 @@ df-messenger {
 
 /** Typing Effect **/
 .typing-fixed {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: bold;
   color: black;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .typing-var {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: bolder;
 	color: #dd7732;
 }
