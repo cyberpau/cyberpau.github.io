@@ -940,5 +940,5 @@ pre {
 }
 
 .project-div {
-  position: absolute;
+  margin: unset;
 }
