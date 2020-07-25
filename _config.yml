@@ -14,9 +14,9 @@ author: John Paulo Mataac
 navbar-links:
   Home: "https://cyberpau.com/"
   Featured Blogs:
-    - TODO List for Post-Website Creation: "2020-07-25-ci-website-guidelines"
-    - Getting Started with PaaS: "2020-07-20-paas"
-    - Getting Started with AIOPS: "2020-07-20-aiops"
+    - Continuous Improvement Guidelines for Newly Created or Poorly Managed Websites: "2020-07-25-ci-website-guidelines"
+    - Introduction to Platform as a Service: "2020-07-20-paas"
+    - Getting Started with Artificial Intelligence in IT Operations: "2020-07-20-aiops"
   Projects: "https://cyberpau.com/#projects"
   Community: "community"
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Continuous Improvement Guidelines for newly created or poorly managed websites
-subtitle: TO-DO List for Post-Webite Creation
+title: TO-DO List for Post-Webite Creation
+subtitle: Continuous Improvement Guidelines for newly created or poorly managed websites
 tags: [blogs, security, website]
 comments: true
 ---
