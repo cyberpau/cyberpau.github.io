@@ -981,6 +981,11 @@ df-messenger {
 .content {
     background-color: white;
     padding: 10px;
+    border: 3px solid black;
+}
+
+.content>.h3 {
+  text-align: center;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
