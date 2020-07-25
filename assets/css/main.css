@@ -24,7 +24,6 @@ body {
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
-  text-align: justify;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -515,7 +514,7 @@ footer .footer-custom-content {
 
 .blog-tags {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #999;
+  color: gray;
   font-size: 0.9375rem;
   margin-bottom: 1.875rem;
 }
@@ -996,4 +995,23 @@ df-messenger {
     .column {
         width: 100%;
     }
+}
+
+
+/** Separator */
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+.separator::before {
+  margin-right: .25em;
+}
+.separator::after {
+  margin-left: .25em;
 }
