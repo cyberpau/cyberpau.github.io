@@ -1020,3 +1020,16 @@ df-messenger {
 .separator::after {
   margin-left: .25em;
 }
+
+/** Typing Effect **/
+.typing-fixed {
+	font-size: 3rem;
+	font-weight: bold;
+	color: black;
+  }
+
+  .typing-var {
+	font-size: 3rem;
+	font-weight: bolder;
+	color: #dd7732;
+  }
