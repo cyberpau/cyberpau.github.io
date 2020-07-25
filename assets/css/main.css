@@ -944,7 +944,7 @@ df-messenger {
 /* Projects */
 
 .main {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -960,7 +960,6 @@ df-messenger {
 
 /* Create four equal columns that floats next to each other */
 .column {
-    margin: -10%;
     float: left;
     width: 25%;
 }
