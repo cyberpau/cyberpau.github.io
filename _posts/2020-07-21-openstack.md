@@ -2,12 +2,7 @@
 layout: post
 title: Learning OpenStack (Day 1)
 subtitle: 
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
 comments: true
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [blogs, openstack, devops]
 ---
 
