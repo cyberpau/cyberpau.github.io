@@ -943,6 +943,13 @@ df-messenger {
 
 /* Projects */
 
+.full-width {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+
 .main {
     max-width: 1200px;
     margin: auto;
