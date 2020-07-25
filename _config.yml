@@ -12,8 +12,9 @@ author: John Paulo Mataac
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Home: "https://cyberpau.com/"
   Featured Blogs:
-    - Website Security For Beginners: "2020-07-22-security-for-beginners"
+    - TODO List for Post-Website Creation: "2020-07-25-ci-website-guidelines"
     - Getting Started with PaaS: "2020-07-20-paas"
     - Getting Started with AIOPS: "2020-07-20-aiops"
   Projects: "https://cyberpau.com/#projects"
@@ -39,7 +40,7 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "someone@example.com"
+  # email: "someone@example.com"
   facebook: jpmataac
   github: cyberpau
   twitter: cyberpau
