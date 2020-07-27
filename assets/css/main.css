@@ -517,13 +517,13 @@ footer .footer-custom-content {
   color: gray;
   font-size: 0.9375rem;
   margin-bottom: 1.875rem;
-  background-color: rgba(238, 238, 238, 0.544);
 }
 
 .blog-tags a {
   color: {{ site.link-col | default: "#008AFF" }};
   text-decoration: none;
   padding: 0 0.3125rem;
+  background-color: rgba(238, 238, 238, 0.544);
 }
 
 .blog-tags a:hover {
