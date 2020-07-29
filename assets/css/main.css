@@ -523,7 +523,7 @@ footer .footer-custom-content {
   color: {{ site.link-col | default: "#008AFF" }};
   text-decoration: none;
   padding: 0 0.3125rem;
-  background-color: rgba(238, 238, 238, 0.544);
+  background-color: #EEE;
 }
 
 .blog-tags a:hover {
@@ -944,13 +944,6 @@ df-messenger {
 /* Projects */
 
 .full-width {
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  left: 50%;
-}
-
-.half-width {
   width: 100vw;
   position: relative;
   margin-left: -50vw;
