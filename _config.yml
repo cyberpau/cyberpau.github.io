@@ -15,7 +15,7 @@ navbar-links:
   Home: "https://cyberpau.com/"
   Featured Blogs:
     - Complete Kubernetes Open Source Tutorial: "2020-07-28-full_kubernetes"
-    - IT Operations Troubleshooting Cheatsheat: "2020-08-07-it-ops-troubleshoot"
+    - SRE Troubleshooting Cheatsheat: "2020-08-07-it-ops-troubleshoot"
     - "More...": "https://cyberpau.com/#blogs"
   Projects: "https://cyberpau.com/#projects"
   Community: "community"
