@@ -6,23 +6,30 @@ tags: [operations, troubleshooting, linux, centos, administrator]
 comments: true
 ---
 
-## Compilation of Cheatsheat
+## Contents
+1. [Cheatsheets](#compilation-of-cheatsheet)
+2. [Tools for Windows](#tools-for-windows)
+3. [Book of Gist](#book-of-gist)
+    - [How to Install Java 8 JDK on CentOS 7](#install-java-8-jdk-on-centos-7)
+    - [How to Install MySQL on CentOS 7](#install-mysql-on-centos-7)
 
- - [Official Kubernetes Cheatsheat](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
- - [Linux Administrator Cheatsheat](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/)
+## Compilation of Cheatsheet
 
-## Downloadable Tools (Windows)
+ - [Official Kubernetes Cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+ - [Linux Administrator Cheatsheet](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/)
+
+## Tools for Windows
 
  - [WinSCP](https://winscp.net/eng/download.php): used for transfering files from Windows to Linux via SSH
  - [FileZilla](): used for SFTP
  - [EverythingSearch](): powerful search for Windows 10.
 
 
-## "Book of Gist" by cyberpau
+## Book of Gist
 
 Github Source: `https://github.com/cyberpau/book-of-gists`
 
-### Install Oracle JDK 8 on CentOS 7
+### Install Java 8 JDK on CentOS 7
 
 Verify if Java 8 is not yet installed
 
@@ -64,6 +71,8 @@ Then update .bash_profile:
     export JAVA_HOME PATH CLASSPATH
     EOF
 
+
+
 ### Install MySQL on CentOS 7
 
 Setup yum repository:
@@ -73,7 +82,7 @@ Setup yum repository:
 Install MySQL 8 Community Server
 
     sed -i 's/enabled=1/enabled=0/' /etc/yum.repos.d/mysql-community.repo
-    yum --enablerepo=mysql80-community install mysql-community-server
+    yum --enablerepo=mysql80-community install -y mysql-community-server
 
 Update configuration by running the command below:
 
@@ -87,12 +96,7 @@ or manually editting the file:
 
 Start MySQL Service:
 
-    service mysqld start
-
-Verify if `lower_case_table_names = 1` was configured
-
-    mysql
-    mysql> show variables like '%name%'
+    systemctl start mysqld
 
 Now, let's secure our mysql install. First, show the temp password:
 
@@ -102,9 +106,9 @@ Copy the output, then do a MySQL secure Installation:
 
     mysql_secure_installation
 
-Paste the copied password from the previous steps. Change your password.
+Paste the copied password from the previous steps. Change your password. Press enter.
 
-Enter "y" for all succeeding queries:
+For suceeding queries, just enter "y":
 
     Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
 
@@ -114,4 +118,11 @@ Enter "y" for all succeeding queries:
 
     Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
 
+Login using the new credentials:
+
+    mysql - u root -p
+
+Verify if `lower_case_table_names = 1` was configured
+    
+    mysql> show variables like '%name%'
 
